@@ -26,14 +26,3 @@ $eventManager->addEventHandler(
     'OnAfterIBlockElementUpdate',
     ['Only\Site\Handlers\Iblock', 'addLog']
 );
-
-\CAgent::AddAgent(
-    '\Only\Site\Agents\Iblock::clearOldLogs();',
-    'clearOldLogs',
-    'N', 
-    3600, 
-    '', 
-    'Y',
-    '', 
-    30 
-);
